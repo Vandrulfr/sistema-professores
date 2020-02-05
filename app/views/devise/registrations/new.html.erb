@@ -8,6 +8,17 @@
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
+  <div class="form_group">
+    <%= f.label :matricula %><br />
+    <%= f.number_field :matricula %>
+  </div>
+
+  <div class="form_group">
+    <%= f.label :nome %><br />
+    <%= f.text_field :name, autocomplete: "name" %>
+  </div>
+
+
   <div class="field">
     <%= f.label :password %>
     <% if @minimum_password_length %>
@@ -22,7 +33,7 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Sign up", class: 'btn' %>
   </div>
 <% end %>
 
