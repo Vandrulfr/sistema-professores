@@ -1,0 +1,55 @@
+#### Usuário ####
+
+TODO REQF 1: O sistema deve permitir o cadastro de usuários.
+TODO REQF 2: Os usuários poderão ter os determinados papéis: Administrador, Secretaria, Professor.
+TODO REQF 3: Um usuário só pode ter um papel.
+TODO REQF 4: Um usuário deve possuir nome, matricula, email. Sendo o nome e matricula únicos e o email, um email válido.
+TODO REQF 5: Um usuário deve autenticar-se no sistema utilizando matricula e senha. O email será utilizado para recuperação de senha.
+TODO REQF 6: Qualquer usuário pode alterar seu próprio email.
+TODO REQF 7: Apenas usuários administradores podem cadastrar ou atualizar usuários com papel administrador ou secretaria.
+TODO REQF 8: Usuário com papel administrador pode ler todos os usuários.
+TODO REQF 9: Usuário com papel secretaria pode cadastrar, atualizar ou ler usuários com papel professor.
+
+
+##### Aluno #####
+
+TODO REQF 10: O sistema deve permitir o gerenciamento de alunos do curso.
+TODO REQF 11: Um aluno deve possuir nome, matrícula e email. O nome e a matrícula devem ser únicos. O email deve ser válido.
+
+
+##### Turma #####
+
+TODO REQF 12: Uma turma deve ter nome, dias de semana, horário de início, horário de término, carga horária mínima, carga horária máxima e capacidade. Deve estar associada a 1 professor e a n alunos. O número de alunos não deve ser maior que a capacidade da turma.
+TODO REQF 13: Uma turma deve ser gerenciada por usuários com papel secretaria.
+
+
+##### Professor #####
+
+TODO REQF 14: Um professor deve estar associado a uma ou mais turmas. Um professor não pode estar associado a duas ou mais turmas com sobrepossição de horário.
+
+
+##### Frequencia #####
+
+TODO REQF 15: Um aluno deve possuir uma frequencia associada a uma turma.
+TODO REQF 16: O professor deve lançar a frequencia para cada um dos alunos e dos dias de aula dos meses que estiver ministrando a aula.
+TODO REQF 17: Um aluno é considerado reprovado se sua carga horária cumprida for menor que a mínima obrigatória da turma.
+TODO REQF 18: O sistema deve permitir que o professor lançe as frequencias para seus alunos de uma turma e para cada um dos dias da aula em um determinado mês em uma mesma tela.
+TODO REQF 19: Um professor não deve remover uma frequência já lançada.
+
+
+
+-- Não funcionais:
+
+TODO  REQNF 1: O sistema deve ser incrito na linguagem Ruby na versão no mínimo 2.4.1 e utilizando o framework Ruby on Rails na versão no mínimo 5.2.0. 
+TODO  REQNF 2: O sistema deve persistir os dados de maneira consistente em um banco relacional.
+TODO  REQNF 3: O sistema deve ter interface amigável. Para isso podem ser utilizados alguma biblioteca de estilos como o Bootstrap ou o Materialize.
+TODO  REQNF 4: O sistema deve estra com cobertura de testes de pelo menos 60%. Para isso deverá ser utilizado as bibliotecas do Rspec seguindo as boas práticas do Better Specs.
+
+
+Requisitos Funcionais Extras:
+
+TODO  REQF 20: Adicionar filtros para melhorar a usuabilidade nas telas de listas de dados (index).
+TODO  REQF 21: Utilizar ajax no lançamento de frequencia.
+TODO  REQF 22: O sistema deve avisar ao aluno quando a chance de ser repovado por falta for maior que 75%.
+
+
