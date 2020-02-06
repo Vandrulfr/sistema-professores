@@ -26,4 +26,6 @@ class User < ApplicationRecord
        { value: login.strip.downcase }]
     ).first
   end
+
+  validates_uniqueness_of :matricula, :email
 end
