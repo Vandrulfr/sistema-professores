@@ -27,5 +27,6 @@ class User < ApplicationRecord
     ).first
   end
 
-  validates_uniqueness_of :matricula, :email
+  validates_uniqueness_of :email
+  validates_uniqueness_of :matricula, on: :create
 end
