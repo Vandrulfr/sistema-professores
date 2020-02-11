@@ -5,7 +5,6 @@
     <div class="card blue-grey lighten-5 hoverable">
       <p class="card-content black-text">
         <span class="card-title"><%= resource_name.capitalize %></span>
-
           <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
             <div class="field">
               <%= f.label :login %><br />
@@ -19,7 +18,7 @@
 
 
             <div class="actions">
-              <%= f.submit "Log in", class: 'btn' %>
+              <%= f.submit "Log in", class: 'waves-effect waves-teal btn-flat teal lighten-1' %>
             </div>
           <% end %>
 

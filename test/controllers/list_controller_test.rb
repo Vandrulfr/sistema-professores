@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class SecTest < ActiveSupport::TestCase
+class ListControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end

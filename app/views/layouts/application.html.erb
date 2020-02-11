@@ -10,7 +10,22 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper teal darken-3">
+          <a href="/" class="brand-logo">Sistema de Professores</a>
+          <ul class="right hide-on-med-and-down">
+            <% if user_signed_in? && current_user.role == 'admin' %>
+              <li><%= link_to'Usuarios', '/list/index' %></li>
+            <% end %>
+
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
+  <div class="container">
       <% if notice %>
         <p class="alert alert-success"><%= notice %></p>
       <% end %>

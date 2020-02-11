@@ -6,9 +6,10 @@ DONE REQF 3: Um usuário só pode ter um papel.
 DONE REQF 4: Um usuário deve possuir nome, matricula, email. Sendo o nome e matricula únicos e o email, um email válido.
 DONE REQF 5: Um usuário deve autenticar-se no sistema utilizando matricula e senha. O email será utilizado para recuperação de senha.
 DONE REQF 6: Qualquer usuário pode alterar seu próprio email.
-    TODO: Criar view home diferente para cada tipo de usuario
+    DONE: Criar view home diferente para cada tipo de usuario
+    DONE: Não permitir que um usuario esteja logado em mais que um role
 TODO REQF 7: Apenas usuários administradores podem cadastrar ou atualizar usuários com papel administrador ou secretaria.
-TODO REQF 8: Usuário com papel administrador pode ler todos os usuários.
+DONE REQF 8: Usuário com papel administrador pode ler todos os usuários.
 TODO REQF 9: Usuário com papel secretaria pode cadastrar, atualizar ou ler usuários com papel professor.
 
 
