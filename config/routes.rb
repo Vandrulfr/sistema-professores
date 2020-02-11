@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'sec/index'
   get 'home/index'
   get 'admin/index'
+  get 'admin/create_user'
   get 'list/index'
 
   root 'home#index'
