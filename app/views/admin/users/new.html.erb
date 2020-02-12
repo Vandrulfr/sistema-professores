@@ -3,7 +3,7 @@
     <div class="card hoverable">
       <div class="card-content">
         <span class="card-title center">Criação de Usuario</span>
-          <%= form_for(User.new, as: 'user', url: create_user_url) do |f| %>
+          <%= form_with(model: [:admin,@user]) do |f| %>
 
             <div class="field">
               <%= f.label :email %><br />
@@ -45,7 +45,7 @@
             </label>
 
             <label>
-              <%= f.radio_button :role, 'admin' %>
+              <%= f.radio_button :role, 'users' %>
               <span>Admin</span>
             </label>
 

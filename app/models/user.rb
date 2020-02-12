@@ -35,6 +35,12 @@ class User < ApplicationRecord
   validates_uniqueness_of :matricula, on: :create
   validates_presence_of :name
 
+  def admin?
+    return true unless role != admin
+
+    false
+  end
+
   private
 
   def set_default_role

@@ -6,13 +6,14 @@ Rails.application.routes.draw do
   get 'professor/index'
   get 'sec/index'
   get 'home/index'
-  get 'admin/index'
-  get 'admin/create_user'
   get 'list/index'
 
   root 'home#index'
 
   resources :users, except: :create
 
-  post 'create_user' => 'users#create', as: :create_user
+  namespace :admin do
+    resources :users, only: %i[index create new]
+  end
+
 end
