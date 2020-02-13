@@ -2,8 +2,17 @@
 
 class ApplicationController < ActionController::Base
   before_action :configure_permitted_parameters, if: :devise_controller?
+  # rescue_from Cancan::AccessDenied, with: :catch_exception
 
   protected
+
+  def catch_exception(exception)
+    redirect_to root_path, alert: exception.message
+  end
+
+  def current_ability
+    @current_ability ||= Ability.new(current_user)
+  end
 
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up,

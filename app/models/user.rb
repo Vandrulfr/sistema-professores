@@ -5,7 +5,7 @@
 # classe de usuarios do devise
 class User < ApplicationRecord
   attr_accessor :login
-  before_create :set_default_role
+  before_validation :set_default_role
 
   # "getter"
   # def login
@@ -36,9 +36,15 @@ class User < ApplicationRecord
   validates_presence_of :name
 
   def admin?
-    return true unless role != admin
+   role == 'admin'
+  end
 
-    false
+  def sec?
+    role == 'sec'
+  end
+
+  def professor?
+    role == 'professor'
   end
 
   private

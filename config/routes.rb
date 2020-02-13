@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   get 'professor/index'
   get 'sec/index'
+  get 'admin/home/index'
   get 'home/index'
   get 'list/index'
 
@@ -13,7 +14,7 @@ Rails.application.routes.draw do
   resources :users, except: :create
 
   namespace :admin do
-    resources :users, only: %i[index create new]
+    resources :users
   end
 
 end

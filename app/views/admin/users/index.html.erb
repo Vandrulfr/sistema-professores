@@ -1,6 +1,22 @@
-<h1>Lorem ipsum dolor sit amet</h1>
-Logado como Admin <strong><%= current_user.name %></strong>.
-<%= link_to 'Edit profile', root_path, :class => 'link' %> |
-<%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'link'  %> <br>
-<%= link_to 'Criar Usuario', new_admin_user_path, :class => 'btn' %>
-<%= link_to 'Mostrar Usuários', '/list/index', :class => 'btn' %>
+<h1>Usuários</h1>
+<%= link_to 'Voltar', :back %>
+
+<table class="highlight">
+  <tr>
+    <th>Nome</th>
+    <th>Matrícula</th>
+    <th>Função</th>
+    <th>Email</th>
+    <th></th>
+  </tr>
+
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.name %></td>
+      <td><%= user.matricula %></td>
+      <td><%= user.role %></td>
+      <td><%= user.email %></td>
+      <td><%= link_to 'Editar', edit_admin_user_path(user) %></td>
+    </tr>
+  <% end %>
+</table>

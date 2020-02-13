@@ -8,7 +8,7 @@ DONE REQF 5: Um usuário deve autenticar-se no sistema utilizando matricula e se
 TODO REQF 6: Qualquer usuário pode alterar seu próprio email.
 DONE: Criar view home diferente para cada tipo de usuario
 DONE: Não permitir que um usuario esteja logado em mais que um role
-TODO: Criar páginas de SignUp/Edit
+DONE: Criar páginas de SignUp/Edit
 DONE REQF 7: Apenas usuários administradores podem cadastrar ou atualizar usuários com papel administrador ou secretaria.
 DONE REQF 8: Usuário com papel administrador pode ler todos os usuários.
 TODO REQF 9: Usuário com papel secretaria pode cadastrar, atualizar ou ler usuários com papel professor.
@@ -29,16 +29,6 @@ TODO REQF 13: Uma turma deve ser gerenciada por usuários com papel secretaria.
 ##### Professor #####
 
 TODO REQF 14: Um professor deve estar associado a uma ou mais turmas. Um professor não pode estar associado a duas ou mais turmas com sobrepossição de horário.
-
-
-##### Frequencia #####
-
-TODO REQF 15: Um aluno deve possuir uma frequencia associada a uma turma.
-TODO REQF 16: O professor deve lançar a frequencia para cada um dos alunos e dos dias de aula dos meses que estiver ministrando a aula.
-TODO REQF 17: Um aluno é considerado reprovado se sua carga horária cumprida for menor que a mínima obrigatória da turma.
-TODO REQF 18: O sistema deve permitir que o professor lançe as frequencias para seus alunos de uma turma e para cada um dos dias da aula em um determinado mês em uma mesma tela.
-TODO REQF 19: Um professor não deve remover uma frequência já lançada.
-
 
 
 -- Não funcionais:

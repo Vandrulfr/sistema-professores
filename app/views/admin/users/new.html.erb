@@ -34,24 +34,23 @@
               <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
             </div>
 
+            <% if current_user.admin? %>
               <label>
                 <%= f.radio_button :role, 'professor' %>
                 <span>Professor</span>
               </label>
 
-            <label>
-              <%= f.radio_button :role, 'sec' %>
-              <span>Secretário</span>
-            </label>
+              <label>
+                <%= f.radio_button :role, 'sec' %>
+                <span>Secretário</span>
+              </label>
 
-            <label>
-              <%= f.radio_button :role, 'users' %>
-              <span>Admin</span>
-            </label>
-
-            <div class="actions">
-              <%= f.submit "Sign up", class: 'btn' %>
-            </div>
+              <label>
+                <%= f.radio_button :role, 'admin' %>
+                <span>Admin</span>
+              </label>
+            <% end %>
+            <%= f.submit "Criar", class: 'waves-effect waves-light btn teal lighten-1 right' %>
           <% end %>
       </div>
     </div>
