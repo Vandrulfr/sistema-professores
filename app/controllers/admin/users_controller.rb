@@ -20,7 +20,8 @@ class Admin::UsersController < ApplicationController
 
   def update
     if @user.update(user_params)
-      redirect_to '/list/index'
+      redirect_to admin_users_path unless @user.role == 'professor'
+      redirect_to root_path if @user.role == 'professor'
     else
       render 'admin/users/edit'
     end
