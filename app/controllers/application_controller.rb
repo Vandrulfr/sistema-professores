@@ -4,6 +4,11 @@ class ApplicationController < ActionController::Base
   before_action :configure_permitted_parameters, if: :devise_controller?
   # rescue_from Cancan::AccessDenied, with: :catch_exception
 
+  rescue_from CanCan::AccessDenied do |exception|
+    redirect_to main_app.root_url, :alert => exception.message
+  end
+
+
   protected
 
   def catch_exception(exception)

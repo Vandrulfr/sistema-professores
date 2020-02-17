@@ -5,14 +5,15 @@ DONE REQF 2: Os usuários poderão ter os determinados papéis: Administrador, S
 DONE REQF 3: Um usuário só pode ter um papel.
 DONE REQF 4: Um usuário deve possuir nome, matricula, email. Sendo o nome e matricula únicos e o email, um email válido.
 DONE REQF 5: Um usuário deve autenticar-se no sistema utilizando matricula e senha. O email será utilizado para recuperação de senha.
-TODO REQF 6: Qualquer usuário pode alterar seu próprio email.
-DONE: Criar view home diferente para cada tipo de usuario
-DONE: Não permitir que um usuario esteja logado em mais que um role
-DONE: Criar páginas de SignUp/Edit
+DONE REQF 6: Qualquer usuário pode alterar seu próprio email.
+    DONE: Criar view home diferente para cada tipo de usuario
+    DONE: Não permitir que um usuario esteja logado em mais que um role
+    DONE: Criar páginas de SignUp/Edit
 DONE REQF 7: Apenas usuários administradores podem cadastrar ou atualizar usuários com papel administrador ou secretaria.
 DONE REQF 8: Usuário com papel administrador pode ler todos os usuários.
-TODO REQF 9: Usuário com papel secretaria pode cadastrar, atualizar ou ler usuários com papel professor.
+DONE REQF 9: Usuário com papel secretaria pode cadastrar, atualizar ou ler usuários com papel professor.
 
+TODO: Encontrar forma de alterar senha?
 
 ##### Aluno #####
 
@@ -39,10 +40,5 @@ REQNF 3: O sistema deve ter interface amigável. Para isso podem ser utilizados 
 REQNF 4: O sistema deve estra com cobertura de testes de pelo menos 60%. Para isso deverá ser utilizado as bibliotecas do Rspec seguindo as boas práticas do Better Specs.
 
 
-Requisitos Funcionais Extras:
-
-TODO  REQF 20: Adicionar filtros para melhorar a usuabilidade nas telas de listas de dados (index).
-TODO  REQF 21: Utilizar ajax no lançamento de frequencia.
-TODO  REQF 22: O sistema deve avisar ao aluno quando a chance de ser repovado por falta for maior que 75%.
 
 

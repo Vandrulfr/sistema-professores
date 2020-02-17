@@ -18,7 +18,9 @@ class Ability
       end
       can :create, User, role: 'professor'
     else
-      can :read, :all
+      can :update, User do |usuario|
+        usuario.id == user.id
+      end
     end
 
     # The first argument to `can` is the action you are giving the user

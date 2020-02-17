@@ -36,7 +36,7 @@ class User < ApplicationRecord
   validates_presence_of :name
 
   def admin?
-   role == 'admin'
+    role == 'admin'
   end
 
   def sec?
@@ -50,6 +50,6 @@ class User < ApplicationRecord
   private
 
   def set_default_role
-    self.role ||= 'Professor'
+    self.role ||= 'professor'
   end
 end

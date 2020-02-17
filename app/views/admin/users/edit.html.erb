@@ -10,33 +10,22 @@
             <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
           </div>
 
-          <div class="form_group">
-            <%= f.label :matricula %><br />
-            <%= f.number_field :matricula %>
+          <% unless current_user.role == 'professor' %>
+
+            <div class="form_group">
+              <%= f.label :matricula %><br />
+              <%= f.number_field :matricula %>
+            </div>
+
+            <div class="form_group">
+              <%= f.label :nome %><br />
+              <%= f.text_field :name, autocomplete: "name" %>
+            </div>
+
+          <% end %>
+          <div>
+            <%= f.submit "Salvar", class: 'waves-effect waves-teal btn-flat teal lighten-1' %>
           </div>
-
-          <div class="form_group">
-            <%= f.label :nome %><br />
-            <%= f.text_field :name, autocomplete: "name" %>
-          </div>
-
-
-          <label>
-            <%= f.radio_button :role, 'professor' %>
-            <span>Professor</span>
-          </label>
-
-          <label>
-            <%= f.radio_button :role, 'sec' %>
-            <span>Secretário</span>
-          </label>
-
-          <label>
-            <%= f.radio_button :role, 'admin' %>
-            <span>Admin</span>
-          </label>
-
-          <%= f.submit "Salvar", class: 'waves-effect waves-teal btn-flat teal lighten-1 right' %>
         <% end %>
       </div>
     </div>
