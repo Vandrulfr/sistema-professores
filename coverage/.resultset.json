@@ -49,13 +49,13 @@
           null,
           null,
           1,
-          0,
+          1,
           null,
           null,
           1,
           null,
           1,
-          14,
+          15,
           null,
           null
         ]
@@ -247,22 +247,8 @@
           1,
           null
         ]
-      },
-      "/home/user/git/sistema professores/app/controllers/list_controller.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
       }
     },
-    "timestamp": 1581975122
+    "timestamp": 1581975321
   }
 }

@@ -11,6 +11,7 @@ RSpec.describe User, type: :model do
   describe 'methods' do
     it { expect(user.admin?).to be_truthy }
     it { expect(user.sec?).to be_falsey }
+    it { expect(user.professor?).to be_falsey}
   end
 
 end
