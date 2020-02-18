@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.feature 'Criar usuarios', type: :feature, js: true do
   scenario 'Admin cria Secretário' do
+    FactoryBot.rewind_sequences
     create(:user, :admin)
     visit '/'
     click_link 'Login'
@@ -21,10 +22,11 @@ RSpec.feature 'Criar usuarios', type: :feature, js: true do
   end
 
   scenario 'Secretário cria professor' do
+    FactoryBot.rewind_sequences
     create(:user, :sec)
     visit '/'
     click_link 'Login'
-    fill_in('Login', with: '3')
+    fill_in('Login', with: '1')
     fill_in('Password', with: 'password')
     click_button('Log in')
     click_link('Criar Professor')
@@ -35,6 +37,6 @@ RSpec.feature 'Criar usuarios', type: :feature, js: true do
     fill_in('Password confirmation', with: 'password')
     click_button('Criar')
     click_link('Mostrar Usuários')
-    expect(page).to have_text('John 4 Doe')
+    expect(page).to have_text('John 2 Doe')
   end
 end

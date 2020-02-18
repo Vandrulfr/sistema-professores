@@ -2,11 +2,12 @@ require 'rails_helper'
 
 RSpec.feature 'Editar Usuarios', type: :feature, js: true do
   scenario 'admin edita outro usuario' do
+    FactoryBot.rewind_sequences
     create(:user, :admin)
     create(:user, :sec)
     visit '/'
     click_link 'Login'
-    fill_in('Login', with: '5')
+    fill_in('Login', with: '1')
     fill_in('Password', with: 'password')
     click_button('Log in')
     click_link('Mostrar Usuários')
@@ -17,10 +18,11 @@ RSpec.feature 'Editar Usuarios', type: :feature, js: true do
   end
 
   scenario 'usuario edita o proprio email' do
+    FactoryBot.rewind_sequences
     create(:user, :professor)
     visit '/'
     click_link 'Login'
-    fill_in('Login', with: '7')
+    fill_in('Login', with: '1')
     fill_in('Password', with: 'password')
     click_button('Log in')
     click_link('Alterar e-mail')
