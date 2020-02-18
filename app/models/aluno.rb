@@ -2,6 +2,7 @@
 
 # classe de modelo de alunos
 class Aluno < ApplicationRecord
+  belongs_to(:turma)
   validates_uniqueness_of :matricula, on: :create
   validates_presence_of :matricula
 

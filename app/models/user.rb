@@ -2,23 +2,12 @@
 
 # app/models/user.rb
 
-# classe de usuarios do devise
+# classe de usuarios
 class User < ApplicationRecord
   attr_accessor :login
   before_validation :set_default_role
+  has_many :turmas
 
-  # "getter"
-  # def login
-  #   @login
-  # end
-
-  # "setter"
-  # def login=(str)
-  #  @login = str
-  # end
-
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable,
          :recoverable, :rememberable, :validatable
 
