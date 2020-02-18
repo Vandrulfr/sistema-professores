@@ -18,6 +18,11 @@ FactoryBot.define do
     end
 
   end
+  factory :aluno do
+    nome { generate :name }
+    email { generate :email }
+    matricula { generate :matricula }
+  end
   sequence :name do |n|
     "John #{n} Doe"
   end
