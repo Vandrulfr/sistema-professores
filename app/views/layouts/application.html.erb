@@ -13,12 +13,12 @@
     <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper teal darken-3">
-          <a href="/" class="brand-logo">Sistema de Professores</a>
-          <ul class="right hide-on-med-and-down">
-            <% if user_signed_in? && current_user.role == 'admin' %>
+          <a href="/" class="brand-logo center">Sistema de Professores</a>
+          <ul class="left">
+            <% if user_signed_in? &&  !(current_user.professor?) %>
               <li><%= link_to'Usuarios', admin_users_path %></li>
             <% end %>
-
+            <li><%= link_to 'Alunos', sec_alunos_path %></li>
           </ul>
         </div>
       </nav>
