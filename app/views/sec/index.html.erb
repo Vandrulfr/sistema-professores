@@ -1,7 +1,10 @@
 <h1>Bem vindo!</h1>
-Logado como Secretário <strong><%= current_user.name %></strong>.
+Logado como Secretário <strong><%= current_user.name %></strong>.<br>
+Email: <%= current_user.email %>
 
-<%= link_to 'Editar Perfil', edit_admin_user_path(current_user.id), :class => 'link' %> |
-<%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'link'  %> <br>
-<%= link_to 'Criar Professor', new_admin_user_path, :class => 'btn' %>
-<%= link_to 'Mostrar Usuários', admin_users_path, :class => 'btn' %>
+<%= link_to 'Alterar e-mail', edit_admin_user_path(current_user.id), class: 'link' %> |
+<%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'link'  %> <br>
+<%= link_to 'Criar Professor', new_admin_user_path, class: 'btn' %>
+<%= link_to 'Mostrar Usuários', admin_users_path, class: 'btn' %>
+<%= link_to 'Mostrar Alunos', sec_alunos_path, class: 'btn' %>
+<%= link_to 'Criar Aluno', new_sec_aluno_path, class: 'btn' %>

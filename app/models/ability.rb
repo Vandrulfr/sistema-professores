@@ -17,6 +17,7 @@ class Ability
         usuario.role == 'professor' || usuario.id == user.id
       end
       can :create, User, role: 'professor'
+      can :manage, Aluno
     else
       can :update, User do |usuario|
         usuario.id == user.id

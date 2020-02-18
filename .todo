@@ -17,8 +17,8 @@ Encontrar forma de alterar senha?
 
 ##### Aluno #####
 
-TODO REQF 10: O sistema deve permitir o gerenciamento de alunos do curso.
-TODO REQF 11: Um aluno deve possuir nome, matrícula e email. O nome e a matrícula devem ser únicos. O email deve ser válido.
+DONE REQF 10: O sistema deve permitir o gerenciamento de alunos do curso.
+DONE REQF 11: Um aluno deve possuir nome, matrícula e email. O nome e a matrícula devem ser únicos. O email deve ser válido.
 
 
 ##### Turma #####

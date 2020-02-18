@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# classe de modelo de aluno
+# classe de modelo de alunos
 class Aluno < ApplicationRecord
   validates_uniqueness_of :matricula, on: :create
   validates_presence_of :matricula

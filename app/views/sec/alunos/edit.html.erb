@@ -1,0 +1,31 @@
+<div class="row" id="edit-box">
+  <div class="col s8 offset-s2 ">
+    <div class="card hoverable">
+      <div class="card-content">
+        <span class="card-title center">Edição de Aluno</span>
+        <%= form_with(model: [:sec,@aluno]) do |f| %>
+
+          <div class="field">
+            <%= f.label :email %><br />
+            <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+          </div>
+
+
+          <div class="form_group">
+            <%= f.label :matricula %><br />
+            <%= f.number_field :matricula %>
+          </div>
+
+          <div class="form_group">
+            <%= f.label :nome %><br />
+            <%= f.text_field :nome, autocomplete: "name" %>
+          </div>
+
+          <div>
+            <%= f.submit "Salvar", class: 'waves-effect waves-teal btn-flat teal lighten-1' %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

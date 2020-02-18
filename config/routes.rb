@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   get 'sec/index'
   get 'admin/home/index'
   get 'home/index'
-  get 'list/index'
 
   root 'home#index'
 
@@ -15,6 +14,10 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :users
+  end
+
+  namespace :sec do
+    resources :alunos
   end
 
 end
