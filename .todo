@@ -13,7 +13,7 @@ DONE REQF 7: Apenas usuários administradores podem cadastrar ou atualizar usuá
 DONE REQF 8: Usuário com papel administrador pode ler todos os usuários.
 DONE REQF 9: Usuário com papel secretaria pode cadastrar, atualizar ou ler usuários com papel professor.
 
-TODO: Encontrar forma de alterar senha?
+Encontrar forma de alterar senha?
 
 ##### Aluno #####
 
