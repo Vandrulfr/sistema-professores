@@ -18,6 +18,7 @@ Rails.application.routes.draw do
 
   namespace :sec do
     resources :alunos
+    resources :turmas
   end
 
 end
