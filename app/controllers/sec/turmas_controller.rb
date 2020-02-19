@@ -16,7 +16,9 @@ class Sec::TurmasController < ApplicationController
 
   def new; end
 
-  def edit; end
+  def edit
+    @professores = User.where(role: :professor)
+  end
 
   def update
     if @turma.update(turma_params)
@@ -37,6 +39,6 @@ class Sec::TurmasController < ApplicationController
 
   def turma_params
     params.require(:turma).permit(:inicio, :fim, :dias, :capacidade,
-                                  :carga_minima, :carga_maxima, :nome)
+                                  :carga_minima, :carga_maxima, :nome, :user_id)
   end
 end

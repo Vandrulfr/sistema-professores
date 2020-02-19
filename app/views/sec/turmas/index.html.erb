@@ -17,12 +17,16 @@
   <% @turma.each do |turma| %>
     <tr>
       <td><%= turma.nome %></td>
-      <td><%= turma.inicio %></td>
-      <td><%= turma.fim %></td>
+      <td><%= turma.inicio.strftime('%H:%M') %></td>
+      <td><%= turma.fim.strftime('%H:%M') %></td>
       <td><%= turma.dias %></td>
       <td><%= turma.carga_minima %></td>
       <td><%= turma.carga_maxima %></td>
-      <td><%= turma.user %></td>
+      <% if turma.user %>
+        <td><%= turma.user.name %></td>
+      <% else %>
+        <td><%= link_to 'Adicionar', edit_sec_turma_path(turma) %></td>
+      <% end %>
       <td><%= link_to 'Editar', edit_sec_turma_path(turma) %></td>
       <td><%= link_to 'Remover', sec_turma_path(turma), method: :delete, data: { confirm: 'Tem certeza?'} %></td>
     </tr>

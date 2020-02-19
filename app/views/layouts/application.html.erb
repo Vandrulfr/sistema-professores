@@ -18,7 +18,14 @@
             <% if user_signed_in? &&  !(current_user.professor?) %>
               <li><%= link_to'Usuarios', admin_users_path %></li>
             <% end %>
-            <li><%= link_to 'Alunos', sec_alunos_path %></li>
+            <% if user_signed_in? &&  !(current_user.professor?) %>
+              <li><%= link_to 'Alunos', sec_alunos_path %></li>
+            <% end %>
+          </ul>
+          <ul class = 'right'>
+            <% if user_signed_in? %>
+             <li><%= link_to 'Turmas', sec_turmas_path %></li>
+            <% end %>
           </ul>
         </div>
       </nav>
