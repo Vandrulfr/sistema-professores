@@ -26,10 +26,17 @@ class Sec::TurmasController < ApplicationController
     end
   end
 
+  def destroy
+    @turma = Turma.find(params[:id])
+    @turma.destroy
+
+    redirect_to sec_turmas_path
+  end
+
   private
 
   def turma_params
     params.require(:turma).permit(:inicio, :fim, :dias, :capacidade,
-                                  :carga_minima, :carga_maxima)
+                                  :carga_minima, :carga_maxima, :nome)
   end
 end

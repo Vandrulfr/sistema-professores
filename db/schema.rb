@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_18_201325) do
+ActiveRecord::Schema.define(version: 2020_02_19_180224) do
 
   create_table "alunos", force: :cascade do |t|
     t.string "nome"
@@ -27,8 +27,9 @@ ActiveRecord::Schema.define(version: 2020_02_18_201325) do
     t.string "dias"
     t.time "fim"
     t.integer "capacidade"
-    t.integer "carga minima"
-    t.integer "carga maxima"
+    t.integer "carga_minima"
+    t.integer "carga_maxima"
+    t.string "nome"
   end
 
   create_table "users", force: :cascade do |t|

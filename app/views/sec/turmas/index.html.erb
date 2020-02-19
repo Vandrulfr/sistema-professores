@@ -1,1 +1,30 @@
-wubba lubba dub dub
+<h1>Turmas</h1>
+<%= link_to 'Voltar', :back %>
+
+<table class="highlight">
+  <tr>
+    <th>Nome</th>
+    <th>Horario de Inicio</th>
+    <th>Horario de Termino</th>
+    <th>Dia</th>
+    <th>Carga Horaria Minima</th>
+    <th>Carga Horaria Total</th>
+    <th>Professor</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% @turma.each do |turma| %>
+    <tr>
+      <td><%= turma.nome %></td>
+      <td><%= turma.inicio %></td>
+      <td><%= turma.fim %></td>
+      <td><%= turma.dias %></td>
+      <td><%= turma.carga_minima %></td>
+      <td><%= turma.carga_maxima %></td>
+      <td><%= turma.user %></td>
+      <td><%= link_to 'Editar', edit_sec_turma_path(turma) %></td>
+      <td><%= link_to 'Remover', sec_turma_path(turma), method: :delete, data: { confirm: 'Tem certeza?'} %></td>
+    </tr>
+  <% end %>
+</table>
