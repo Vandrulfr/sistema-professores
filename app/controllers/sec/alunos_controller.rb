@@ -17,11 +17,12 @@ class Sec::AlunosController < ApplicationController
   def new; end
 
   def edit
-    @turmas = Turma.all
+    @turmas = Turma.where(cheio: false)
   end
 
   def update
     if @aluno.update(aluno_params)
+      @aluno.turma&.check_cheio
       redirect_to sec_alunos_path
     else
       render 'sec/alunos/edit'
@@ -31,6 +32,6 @@ class Sec::AlunosController < ApplicationController
   private
 
   def aluno_params
-    params.require(:aluno).permit(:nome, :email, :matricula)
+    params.require(:aluno).permit(:nome, :email, :matricula, :turma_id)
   end
 end

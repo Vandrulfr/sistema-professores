@@ -21,6 +21,16 @@
             <%= f.text_field :nome, autocomplete: "name" %>
           </div>
 
+          <h6>Turma</h6>
+          <% @turmas.each do |turma| %>
+            <div>
+              <label>
+                <%= f.radio_button :turma_id, turma.id %>
+                <span id="p"><%="#{turma.nome} com professor #{turma.user.name}"%></span>
+              </label>
+            </div>
+          <% end %>
+
           <div>
             <%= f.submit "Salvar", class: 'waves-effect waves-teal btn-flat teal lighten-1' %>
           </div>

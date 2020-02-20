@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   get 'sec/index'
   get 'admin/home/index'
   get 'home/index'
-
   root 'home#index'
 
   resources :users, except: :create

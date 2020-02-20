@@ -10,6 +10,7 @@
     <th>Carga Horaria Minima</th>
     <th>Carga Horaria Total</th>
     <th>Professor</th>
+    <th>Número de Alunos</th>
     <th></th>
     <th></th>
   </tr>
@@ -27,8 +28,12 @@
       <% else %>
         <td><%= link_to 'Adicionar', edit_sec_turma_path(turma) %></td>
       <% end %>
-      <td><%= link_to 'Editar', edit_sec_turma_path(turma) %></td>
-      <td><%= link_to 'Remover', sec_turma_path(turma), method: :delete, data: { confirm: 'Tem certeza?'} %></td>
+      <td><%= Aluno.where(turma_id: turma.id).length %></td>
+      <td><%= link_to 'Editar', edit_sec_turma_path(turma) %><br>
+        <%= link_to 'Remover', sec_turma_path(turma), method: :delete, data: { confirm: 'Tem certeza?'} %></td>
+        <% if turma.cheio %>
+          <strong>Cheio!</strong>
+        <% end %>
     </tr>
   <% end %>
 </table>

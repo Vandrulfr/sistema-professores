@@ -25,7 +25,7 @@ DONE REQF 11: Um aluno deve possuir nome, matrícula e email. O nome e a matríc
 
 DONE REQF 12: Uma turma deve ter nome, dias de semana, horário de início, horário de término,
 DONE: carga horária mínima, carga horária máxima e capacidade. Deve estar associada a 1 professor e a n alunos.
-TODO: O número de alunos não deve ser maior que a capacidade da turma.
+DONE: O número de alunos não deve ser maior que a capacidade da turma.
 DONE REQF 13: Uma turma deve ser gerenciada por usuários com papel secretaria.
 
 
@@ -33,7 +33,6 @@ DONE REQF 13: Uma turma deve ser gerenciada por usuários com papel secretaria.
 
 DONE REQF 14: Um professor deve estar associado a uma ou mais turmas.
 TODO:Um professor não pode estar associado a duas ou mais turmas com sobrepossição de horário.
-TODO: Permitir que um professor veja suas próprias turmas
 
 -- Não funcionais:
 
@@ -43,5 +42,7 @@ REQNF 3: O sistema deve ter interface amigável. Para isso podem ser utilizados 
 REQNF 4: O sistema deve estra com cobertura de testes de pelo menos 60%. Para isso deverá ser utilizado as bibliotecas do Rspec seguindo as boas práticas do Better Specs.
 
 
+outros:
 
+TODO: Permitir que um professor veja suas próprias turmas
 

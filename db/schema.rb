@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_20_164509) do
+ActiveRecord::Schema.define(version: 2020_02_20_165936) do
 
   create_table "alunos", force: :cascade do |t|
     t.string "nome"
@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(version: 2020_02_20_164509) do
     t.string "email"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "turmas_id"
-    t.index ["turmas_id"], name: "index_alunos_on_turmas_id"
+    t.integer "turma_id"
+    t.index ["turma_id"], name: "index_alunos_on_turma_id"
   end
 
   create_table "turmas", force: :cascade do |t|
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 2020_02_20_164509) do
     t.integer "carga_maxima"
     t.string "nome"
     t.integer "user_id"
+    t.boolean "cheio", default: false
     t.index ["user_id"], name: "index_turmas_on_user_id"
   end
 
@@ -51,6 +52,6 @@ ActiveRecord::Schema.define(version: 2020_02_20_164509) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "alunos", "turmas", column: "turmas_id"
+  add_foreign_key "alunos", "turmas"
   add_foreign_key "turmas", "users"
 end

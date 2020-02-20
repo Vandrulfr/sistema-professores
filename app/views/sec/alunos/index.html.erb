@@ -1,11 +1,13 @@
 <h1>Alunos</h1>
-<%= link_to 'Voltar', :back %>
+<%= link_to 'Voltar', :back, id: 'voltaraluno' %>
+<%= link_to 'Novo', new_sec_aluno_path %>
 
 <table class="highlight">
   <tr>
     <th>Nome</th>
     <th>Matrícula</th>
     <th>Email</th>
+    <th>Turma</th>
     <th></th>
   </tr>
 
@@ -14,6 +16,10 @@
       <td><%= aluno.nome %></td>
       <td><%= aluno.matricula %></td>
       <td><%= aluno.email %></td>
+      <%# debugger %>
+      <td><% if aluno.turma %>
+        <%= aluno.turma.nome %>
+      <% end %></td>
       <td><%= link_to 'Editar', edit_sec_aluno_path(aluno) %></td>
     </tr>
   <% end %>
