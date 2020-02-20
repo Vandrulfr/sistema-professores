@@ -17,7 +17,7 @@ class Sec::TurmasController < ApplicationController
   def new; end
 
   def edit
-    @professores = User.where(role: :professor)
+    @professores = User.disponiveis(@turma)
   end
 
   def update
