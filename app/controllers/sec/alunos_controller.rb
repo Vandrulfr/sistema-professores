@@ -16,7 +16,9 @@ class Sec::AlunosController < ApplicationController
 
   def new; end
 
-  def edit; end
+  def edit
+    @turmas = Turma.all
+  end
 
   def update
     if @aluno.update(aluno_params)
