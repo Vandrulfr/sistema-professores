@@ -33,7 +33,7 @@ DONE REQF 13: Uma turma deve ser gerenciada por usuários com papel secretaria.
 
 DONE REQF 14: Um professor deve estar associado a uma ou mais turmas.
 TODO:Um professor não pode estar associado a duas ou mais turmas com sobrepossição de horário.
-
+TODO: Permitir que um professor veja suas próprias turmas
 
 -- Não funcionais:
 
