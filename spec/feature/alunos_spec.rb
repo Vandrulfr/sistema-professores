@@ -13,6 +13,8 @@ RSpec.feature 'Criar Alunos', type: :feature, js: true do
     fill_in('Email', with: generate(:email))
     fill_in('Matricula', with: generate(:matricula))
     fill_in('Nome', with: generate(:name))
+    click_button('Criar')
+    expect(page).to have_text('John 2 Doe')
   end
   scenario 'Secretário edita aluno' do
     FactoryBot.rewind_sequences

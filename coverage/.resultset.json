@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/user/git/sistema professores/app/models/user.rb": {
+      "/home/vandrulfr/git/sistema-professores/app/models/user.rb": {
         "lines": [
           null,
           null,
@@ -38,37 +38,44 @@
           null,
           null,
           1,
-          43,
+          44,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
           null,
           null,
           1,
           null,
           1,
-          17,
+          11,
           null,
           null
         ]
       },
-      "/home/user/git/sistema professores/app/models/application_record.rb": {
+      "/home/vandrulfr/git/sistema-professores/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/home/user/git/sistema professores/app/helpers/application_helper.rb": {
+      "/home/vandrulfr/git/sistema-professores/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/user/git/sistema professores/app/helpers/sec/alunos_helper.rb": {
+      "/home/vandrulfr/git/sistema-professores/app/helpers/sec/alunos_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/home/user/git/sistema professores/app/controllers/application_controller.rb": {
+      "/home/vandrulfr/git/sistema-professores/app/controllers/application_controller.rb": {
         "lines": [
           null,
           null,
@@ -88,7 +95,7 @@
           null,
           null,
           1,
-          34,
+          36,
           null,
           null,
           1,
@@ -107,7 +114,7 @@
           null
         ]
       },
-      "/home/user/git/sistema professores/app/controllers/home_controller.rb": {
+      "/home/vandrulfr/git/sistema-professores/app/controllers/home_controller.rb": {
         "lines": [
           1,
           1,
@@ -117,105 +124,105 @@
           1,
           null,
           1,
-          15,
+          16,
           null,
-          9,
-          9,
-          9,
-          null,
-          null
-        ]
-      },
-      "/home/user/git/sistema professores/app/controllers/sec_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/home/user/git/sistema professores/app/controllers/sec/alunos_controller.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          1,
-          2,
-          null,
-          null,
-          1,
-          0,
-          0,
-          null,
-          0,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          0,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/home/user/git/sistema professores/app/models/aluno.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/home/user/git/sistema professores/app/models/ability.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          17,
-          17,
-          null,
-          17,
-          7,
           10,
-          8,
-          8,
+          10,
+          10,
+          null,
+          null
+        ]
+      },
+      "/home/vandrulfr/git/sistema-professores/app/controllers/sec_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/vandrulfr/git/sistema-professores/app/controllers/sec/alunos_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
           0,
           null,
-          8,
-          8,
-          8,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/home/vandrulfr/git/sistema-professores/app/models/aluno.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/vandrulfr/git/sistema-professores/app/models/ability.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          18,
+          18,
+          null,
+          18,
+          7,
+          11,
+          9,
+          9,
+          0,
+          null,
+          9,
+          9,
+          9,
           null,
           2,
           2,
@@ -225,7 +232,7 @@
           null
         ]
       },
-      "/home/user/git/sistema professores/app/models/turma.rb": {
+      "/home/vandrulfr/git/sistema-professores/app/models/turma.rb": {
         "lines": [
           1,
           1,
@@ -234,12 +241,23 @@
           1,
           null,
           1,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
           0,
           null,
           null
         ]
       },
-      "/home/user/git/sistema professores/app/controllers/admin/home_controller.rb": {
+      "/home/vandrulfr/git/sistema-professores/app/controllers/admin/home_controller.rb": {
         "lines": [
           1,
           null,
@@ -254,7 +272,7 @@
           null
         ]
       },
-      "/home/user/git/sistema professores/app/controllers/admin/users_controller.rb": {
+      "/home/vandrulfr/git/sistema-professores/app/controllers/admin/users_controller.rb": {
         "lines": [
           null,
           null,
@@ -294,14 +312,14 @@
           null
         ]
       },
-      "/home/user/git/sistema professores/app/controllers/professor_controller.rb": {
+      "/home/vandrulfr/git/sistema-professores/app/controllers/professor_controller.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/home/user/git/sistema professores/app/controllers/sec/turmas_controller.rb": {
+      "/home/vandrulfr/git/sistema-professores/app/controllers/sec/turmas_controller.rb": {
         "lines": [
           null,
           null,
@@ -352,6 +370,6 @@
         }
       }
     },
-    "timestamp": 1582225148
+    "timestamp": 1582316842
   }
 }
