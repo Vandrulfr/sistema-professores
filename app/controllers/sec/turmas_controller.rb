@@ -8,7 +8,7 @@ class Sec::TurmasController < ApplicationController
 
   def create
     if @turma.save
-      redirect_to root_path
+      redirect_to sec_turmas_path
     else
       render :new
     end

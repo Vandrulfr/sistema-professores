@@ -8,7 +8,7 @@ class Sec::AlunosController < ApplicationController
 
   def create
     if @aluno.save
-      redirect_to root_path
+      redirect_to sec_alunos_path
     else
       render :new
     end
